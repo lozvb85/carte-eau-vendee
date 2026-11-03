@@ -38,11 +38,17 @@ async function initialize(){
  if(!window.L){warning('Bibliothèque de carte indisponible : vérifiez la connexion ou bloqueurs de contenus.');return}
  map=L.map('map',{zoomControl:false,scrollWheelZoom:false,tap:true,preferCanvas:true}).setView([46.66,-1.22],9);
  L.control.zoom({position:'bottomright'}).addTo(map);
- L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png',{attribution:'© OpenStreetMap · © CARTO',maxZoom:18}).addTo(map);
+ // Pas de fond de tuiles externe: carte vectorielle, sans cle API.
+ map.getContainer().style.background='#e9f3ef';
+ map.attributionControl.setPrefix(false);
+ map.attributionControl.addAttribution('Contours : API Géo / IGN · Données : Vendée Eau');
  data=localData;
  if(data.barrages.length!==13){warning('Données des retenues incomplètes');return}
  // Markers are displayed regardless of external administrative boundary availability.
  drawBarrages();setMode('barrages');
+ // Montrer immédiatement les 13 repères, même si l'API Géo est lente ou indisponible.
+ const markerBounds=L.latLngBounds(data.barrages.map(pointFor));
+ if(markerBounds.isValid())map.fitBounds(markerBounds.pad(.18),{padding:[30,30],maxZoom:9});
  loading.hidden=true;
  $('#suggestions').innerHTML=data.barrages.map(b=>'<option value="'+html(b.name)+'"></option>').join('');
  try {
@@ -52,14 +58,15 @@ async function initialize(){
   layer=L.geoJSON(geo,{style:()=>({color:'#abc9bd',weight:.7,fillColor:'#a5d4c4',fillOpacity:.11}),onEachFeature:(f,path)=>{path.on('click',()=>selectCommune(f,path));path.bindTooltip(html(label(f)),{sticky:true,opacity:.96,direction:'top'})}}).addTo(map);
   map.fitBounds(layer.getBounds(),{padding:[18,18]});
   drawBarrages();
+  if(currentMode==='barrages')barrageLayer.addTo(map);
   $('#suggestions').innerHTML=[...geo.features.map(f=>label(f)),...data.barrages.map(b=>b.name)].sort((a,b)=>a.localeCompare(b,'fr')).map(n=>'<option value="'+html(n)+'"></option>').join('');
  }catch(e){
-   hint.textContent='Barrages affichés · Contours communaux momentanément indisponibles';
+   hint.textContent='Barrages affichés · Contours communaux indisponibles · Barrages consultables';
    $('#mapTitle').textContent='13 RETENUES · CONTOURS EN ATTENTE';
    console.warn('Contour GeoJSON indisponible',e);
  }
 }
-$$('.tab').forEach(b=>b.addEventListener('click',()=>setMode(b.dataset.mode)));$('#reset').addEventListener('click',()=>{if(layer)map.fitBounds(layer.getBounds(),{padding:[18,18]})});search.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();findSearch()}});search.addEventListener('change',findSearch);$('#compareToggle').addEventListener('click',()=>{$('#comparePanel').hidden=!$('#comparePanel').hidden});$('#closeCompare').addEventListener('click',()=>{$('#comparePanel').hidden=true});['selA','selB'].forEach(id=>$('#'+id).addEventListener('change',comparison));
+$$('.tab').forEach(b=>b.addEventListener('click',()=>setMode(b.dataset.mode)));$('#reset').addEventListener('click',()=>{if(layer)map.fitBounds(layer.getBounds(),{padding:[18,18]});else if(data)map.fitBounds(L.latLngBounds(data.barrages.map(pointFor)).pad(.18),{padding:[30,30]})});search.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();findSearch()}});search.addEventListener('change',findSearch);$('#compareToggle').addEventListener('click',()=>{$('#comparePanel').hidden=!$('#comparePanel').hidden});$('#closeCompare').addEventListener('click',()=>{$('#comparePanel').hidden=true});['selA','selB'].forEach(id=>$('#'+id).addEventListener('change',comparison));
 initialize().then(()=>{if(!data)return;for(const id of ['selA','selB'])$('#'+id).innerHTML=data.barrages.map(x=>`<option value="${x.id}">${html(x.name)}</option>`).join('');$('#selB').selectedIndex=1;comparison()});
 })();
 </script></body></html>
