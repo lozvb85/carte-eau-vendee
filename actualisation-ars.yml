@@ -1,0 +1,27 @@
+name: Actualiser notes ARS 2025
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '25 6 * * 1'
+permissions:
+  contents: write
+jobs:
+  collecte:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests pymupdf
+      - run: python scripts/collecte_ars.py
+      - name: Enregistrer les données officielles
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add qualite-2025.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Mise à jour des notes ARS 2025'
+            git push
+          fi
