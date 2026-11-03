@@ -1,0 +1,20 @@
+{
+  "date":"2026-10-25",
+  "source":"Vendée Eau — L'état de la ressource, tableau Niveaux et volumes stockés dans les retenues, 25 octobre 2026",
+  "total":{"stocked":18270000,"capacity":55800000,"percentage":32.7},
+  "barrages":[
+    {"id":"apremont","name":"Apremont","pct":26,"stocked":1000000,"capacity":3800000,"x":39.1,"y":42.1},
+    {"id":"jaunay","name":"Jaunay","pct":34,"stocked":1250000,"capacity":3700000,"x":36.8,"y":51.8},
+    {"id":"sorin","name":"Sorin / Finfarine","pct":20,"stocked":300000,"capacity":1500000,"x":38.1,"y":69.8},
+    {"id":"graon","name":"Graon","pct":32,"stocked":1150000,"capacity":3600000,"x":55.8,"y":67.8},
+    {"id":"moulin","name":"Moulin Papon","pct":43,"stocked":1890000,"capacity":4400000,"x":55.2,"y":49.7},
+    {"id":"marillet","name":"Marillet","pct":27,"stocked":1940000,"capacity":7200000,"x":61.3,"y":63.7},
+    {"id":"rochereau","name":"Rochereau","pct":29,"stocked":1500000,"capacity":5100000,"x":78.1,"y":52.3},
+    {"id":"angle","name":"Angle Guignard","pct":48,"stocked":860000,"capacity":1800000,"x":72.2,"y":56.4},
+    {"id":"vouraie","name":"Vouraie","pct":20,"stocked":1100000,"capacity":5400000,"x":65.5,"y":61.1,"approx":true},
+    {"id":"bultiere","name":"La Bultière","pct":37,"stocked":1830000,"capacity":5000000,"x":65.8,"y":27.0},
+    {"id":"mervent","name":"Mervent","pct":46,"stocked":3840000,"capacity":8300000,"x":75.9,"y":82.0,"approx":true},
+    {"id":"pierre","name":"Pierre Brune","pct":17,"stocked":500000,"capacity":3000000,"x":77.0,"y":84.6,"approx":true},
+    {"id":"albert","name":"Albert","pct":37,"stocked":1110000,"capacity":3000000,"x":78.4,"y":86.7,"approx":true}
+  ]
+}
