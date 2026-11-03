@@ -1,0 +1,54 @@
+{
+  "annee": 2025,
+  "mis_a_jour": "2026-11-03",
+  "statut": "partiel",
+  "communes": {
+    "85084": {
+      "note": "C",
+      "reseaux": [
+        {
+          "udi": "085000101",
+          "note": "C",
+          "nom": "RÉSERVOIRS FRÉTIÈRE BEAULIEU",
+          "cause": "Bromates : 26 jours cumulés de dépassement de la limite en deux épisodes ; valeur maximale 14 µg/L (limite 10 µg/L).",
+          "source": "Fiche ARS 2025 transmise, éditée le 12/05/2026"
+        }
+      ]
+    },
+    "85191": {
+      "note": "A",
+      "reseaux": [
+        {
+          "udi": "085000201",
+          "note": "A",
+          "nom": "LA ROCHE-SUR-YON",
+          "cause": "Bilan ARS 2025 : eau de bonne qualité.",
+          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000201-2025.pdf"
+        }
+      ]
+    }
+  },
+  "reseaux": {
+    "085000030": {
+      "note": "A",
+      "nom": "RÉSERVOIR DE LA CHOLETIÈRE",
+      "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000030-2025.pdf"
+    },
+    "085000450": {
+      "note": "A",
+      "nom": "RÉSERVOIR DE SAINT-VINCENT-SUR-GRAON",
+      "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000450-2025.pdf"
+    },
+    "085000201": {
+      "note": "A",
+      "nom": "LA ROCHE-SUR-YON",
+      "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000201-2025.pdf"
+    },
+    "085000101": {
+      "note": "C",
+      "nom": "RÉSERVOIRS FRÉTIÈRE BEAULIEU",
+      "cause": "Bromates (2025)",
+      "source": "Document ARS 2025 transmis"
+    }
+  }
+}
