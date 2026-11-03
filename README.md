@@ -1,41 +1,57 @@
-# L’eau en Vendée — V5 · Alouette
+# Carte de l'eau en Vendée · V10
 
-## Projet
-Carte web entièrement redessinée, sans reproduction visuelle du document historique Vendée Eau. Fond vectoriel interactif Leaflet + contours des communes API Géo, recherche, barrages cliquables, comparateur et consultation à la demande des résultats du contrôle sanitaire des UDI via Hub'Eau.
+Projet statique GitHub Pages. **Référence sanitaire : bilans annuels ARS 2025.** Les analyses ponctuelles 2026 sont interrogées séparément auprès de Hub'Eau au clic sur une commune. Ne pas présenter 2025 comme un classement 2026.
 
 ## Contenu
-- `index.html` : structure de la page.
-- `style.css` : charte graphique responsive.
-- `script.js` : carte, recherche, fiches, comparaison et API.
-- `data.json` : les 13 taux et volumes de remplissage vérifiés au 25 octobre 2026.
 
-## Sources / avertissements
-- Vendée Eau, « L’état de la ressource », tableau au **25 octobre 2026**. Les 13 retenues totalisent **18 270 000 m³ stockés**, sur 55 800 000 m³ (32,7 % arrondi par l'exploitant).
-- API Découpage administratif : `https://geo.api.gouv.fr/departements/85/communes?format=geojson&geometry=contour`.
-- Hub'Eau eau potable : `https://hubeau.eaufrance.fr/api/v1/qualite_eau_potable/`, endpoints `communes_udi` et `resultats_dis`.
-- La carte PDF de Vendée Eau de septembre 2020 a servi à documenter les origines, **mais n'est pas le fond graphique de V5**.
+- `index.html` : carte Leaflet, navigation, barrages, fiches communes, légende A/B/C/D, recherche et comparaison des barrages.
+- `communes-vendee.json` : liste locale de 253 communes et codes INSEE, pour le répertoire même si l'API des contours est temporairement indisponible.
+- `qualite-2025.json` : notes **vérifiées** ; dans l'archive initiale, seules les communes Essarts-en-Bocage (C, réseau Frétière Beaulieu) et La Roche-sur-Yon (A, réseau 085000201) sont associées avec certitude. Les fiches A des UDI 085000030 et 085000450 sont recensées, **sans déduire quelles communes elles desservent**.
+- `scripts/collecte_ars.py` : outil de collecte à partir des relations commune–UDI Hub'Eau et des PDF Infofacture ARS. Un PDF absent ou ambigu n'est pas classé.
+- `.github/workflows/actualisation-ars.yml` : exécution manuelle ou hebdomadaire de l'outil sur GitHub Actions. **Le fonctionnement réel de cette collecte sur le serveur de GitHub n'a pas été vérifié** et dépend de la disponibilité des sources officielles.
 
-### Limites cruciales
-1. **Localisation des 13 repères de barrage approximative** : position dérivée du schéma historique, transformée vers la Vendée vectorielle. Elle **n’est pas une géolocalisation officielle**. À remplacer avant publication éditoriale par des coordonnées validées.
-2. **Aucune zone barrage→commune n’est inventée** : les zones de distribution d’eau de 2020 ne sont pas des polygones SIG géoréférencés ; leur carte historique est seulement citée.
-3. Les chiffres de remplissage décrivent la **quantité d'eau brute**, jamais la qualité sanitaire.
-4. Les résultats sanitaires sont chargés à la demande. Si l'API est temporairement indisponible, une erreur est affichée ; aucune mesure n'est créée.
-5. Les analyses affichées sont un **extrait de réponse API**, pas un diagnostic global de conformité.
-6. Certaines communes peuvent dépendre de plusieurs unités de distribution (UDI).
-7. Cette édition utilise des services externes pour la carte vectorielle, les fonds de plan, les polices et les mesures. Elle n'est pas 100 % autonome hors connexion.
+## Publier sur GitHub Pages
 
-## Mettre en ligne gratuitement
-1. Décompresser le ZIP.
-2. Déposer **les quatre fichiers eux-mêmes**, pas le dossier ni le ZIP, à la racine du dépôt `lozvb85/carte-eau-vendee` sur github.com.
-3. Confirmer la présence de `index.html` à la racine.
-4. Dans `Settings → Pages` : `Deploy from a branch`, branche `main`, dossier `/(root)`.
-5. Ouvrir `https://lozvb85.github.io/carte-eau-vendee/` et forcer le rafraîchissement (Ctrl+F5).
+1. Télécharger puis **extraire** le ZIP.
+2. Ouvrir le dépôt `lozvb85/carte-eau-vendee`, branch `main`.
+3. Importer les fichiers à la racine du dépôt : `index.html`, `qualite-2025.json`, `communes-vendee.json` ; importer aussi `scripts/collecte_ars.py` et `.github/workflows/actualisation-ars.yml` avec ces chemins exacts. Ne pas importer le dossier parent.
+4. Commit changes. Paramètres GitHub Pages : `Deploy from a branch`, `main`, `/(root)`.
+5. Tester : https://lozvb85.github.io/carte-eau-vendee/?version=10
 
-## Pour intégrer dans un article
+**Pour collecter toutes les fiches automatiquement :** dans GitHub, ouvrir **Actions → Actualiser notes ARS 2025 → Run workflow**. Si le bouton n'apparaît pas, autoriser les workflows dans Settings → Actions. Il peut aussi être nécessaire de régler **Settings → Actions → General → Workflow permissions** sur **Read and write permissions**. Un échec de l'action doit être examiné dans ses logs ; le précédent fichier de notes reste en place tant que la collecte échoue.
+
+Le fichier `qualite-2025.json` est ensuite mis à jour par l'action, si toutes les vérifications de couverture passent. Une commune ne reçoit une couleur unique que si **tous ses réseaux connus disposent d'une note et que leurs notes sont identiques**. Si plusieurs réseaux ont des notes différentes, la commune reste grise et les notes sont listées au clic. Les réseaux sans bilan vérifié restent non renseignés.
+
+## Méthode de collecte
+
+1. Lister les 253 codes INSEE à partir du référentiel transmis.
+2. Interroger `https://hubeau.eaufrance.fr/api/v1/qualite_eau_potable/communes_udi` avec `code_commune`, `annee=2025`, `size=200`.
+3. Dédupliquer les codes de réseaux (UDI).
+4. Télécharger les fiches officielles `https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-[CODE_UDI]-2025.pdf`.
+5. Extraire **uniquement la lettre dans le cartouche « Indicateur global de qualité »** et confirmer l'année.
+6. Écarter tout fichier inaccessible, dont la note est illisible ou ambiguë. La source est enregistrée par UDI.
+7. Rattacher les UDI aux communes, sans extrapolation basée sur les noms ou la proximité d'un barrage.
+
+Ce mécanisme est **une base d'automatisation à tester**, et non la preuve que tous les bilans ont déjà été téléchargés. Les PDF peuvent changer de mise en page et exiger une revue de la routine d'extraction avant publication d'un dossier journalistique.
+
+## Déjà vérifié
+
+- Les deux fiches PDF transmises `085000030` (Choletière) et `085000450` (Saint-Vincent-sur-Graon) donnent A, ce que la routine d'extraction reproduit sur ces fichiers locaux.
+- Le document ARS Frétière-Beaulieu concerne **2025**, classement C en raison de dépassements de bromates ; la cause exacte de l'incident de février **2026** reste non établie.
+- Les 13 retenues et leurs remplissages au **25 octobre 2026** sont des données datées, sans mise à jour automatique dans cette version. Leur position demeure indicative.
+- La syntaxe JavaScript passe `node --check`. Le test navigateur automatisé a été bloqué par les restrictions de cet environnement ; **aucun test mobile réel** n'a été exécuté.
+
+## Sources
+
+- DGS / ARS : Infofactures officielles (AtlaSanté), bilans 2025.
+- API Hub'Eau Qualité de l'eau potable : liaisons communes-UDI et analyses ponctuelles.
+- API Géo de l'État : contours communaux.
+- Vendée Eau : niveaux et volumes des 13 retenues au 25 octobre 2026.
+
+## Intégration dans un article Alouette
+
 ```html
-<iframe title="L'eau en Vendée : carte interactive Alouette" src="https://lozvb85.github.io/carte-eau-vendee/" loading="lazy" style="border:0;width:100%;height:1080px" allowfullscreen></iframe>
+<iframe src="https://lozvb85.github.io/carte-eau-vendee/" title="Qualité de l'eau et barrages en Vendée — Alouette" loading="lazy" style="width:100%;border:0;max-width:100%;height:1450px" referrerpolicy="strict-origin-when-cross-origin"></iframe>
 ```
-Pour mobile, prévoir une hauteur initiale d'environ 1400 px, à ajuster sur le site.
 
-## Vérifications
-Exécuter `node --check script.js`. Contrôler en situation sur iPhone, Android et desktop : clic, recherche, chargement API, comparaison, redimensionnement, droits d'iframe. **Le rendu navigateur et les API n'ont pas été validés automatiquement dans l'environnement de création.**
+Hauteur à ajuster après test sur smartphone (souvent supérieure à celle du bureau). Aucune donnée personnelle collectée volontairement ; les appels aux API externes peuvent générer leurs propres journaux d'accès.
