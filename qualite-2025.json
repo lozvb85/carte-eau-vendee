@@ -1,18 +1,18 @@
 {
   "annee": 2025,
-  "mis_a_jour": "2026-11-09T07:52:01+00:00",
+  "mis_a_jour": "2026-11-16T09:14:03+00:00",
   "statut": "extraction automatisée, vérification éditoriale recommandée",
   "communes": {
-    "85002": {
-      "nom": "L'Aiguillon-sur-Vie",
+    "85003": {
+      "nom": "Aizenay",
       "note": "A",
       "multi": false,
       "reseaux": [
         {
-          "udi": "085000056",
-          "nom": "RESERVOIR DE LA NATHALINIERE",
+          "udi": "085001026",
+          "nom": "RESERVOIR D'APREMONT",
           "note": "A",
-          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000056-2025.pdf",
+          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085001026-2025.pdf",
           "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
           "extraction": "case globale du PDF ARS"
         }
@@ -33,23 +33,8 @@
         }
       ]
     },
-    "85003": {
-      "nom": "Aizenay",
-      "note": "A",
-      "multi": false,
-      "reseaux": [
-        {
-          "udi": "085001026",
-          "nom": "RESERVOIR D'APREMONT",
-          "note": "A",
-          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085001026-2025.pdf",
-          "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
-          "extraction": "case globale du PDF ARS"
-        }
-      ]
-    },
-    "85004": {
-      "nom": "Angles",
+    "85001": {
+      "nom": "L'Aiguillon-la-Presqu'île",
       "note": "A",
       "multi": false,
       "reseaux": [
@@ -63,8 +48,23 @@
         }
       ]
     },
-    "85001": {
-      "nom": "L'Aiguillon-la-Presqu'île",
+    "85002": {
+      "nom": "L'Aiguillon-sur-Vie",
+      "note": "A",
+      "multi": false,
+      "reseaux": [
+        {
+          "udi": "085000056",
+          "nom": "RESERVOIR DE LA NATHALINIERE",
+          "note": "A",
+          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000056-2025.pdf",
+          "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
+          "extraction": "case globale du PDF ARS"
+        }
+      ]
+    },
+    "85004": {
+      "nom": "Angles",
       "note": "A",
       "multi": false,
       "reseaux": [
@@ -507,6 +507,21 @@
         }
       ]
     },
+    "85039": {
+      "nom": "La Bruffière",
+      "note": "C",
+      "multi": false,
+      "reseaux": [
+        {
+          "udi": "085000805",
+          "nom": "RESERVOIR DE LA BRUFFIERE",
+          "note": "C",
+          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000805-2025.pdf",
+          "conclusion": "L'eau distribuée est produite par l’usine de Basse",
+          "extraction": "case globale du PDF ARS"
+        }
+      ]
+    },
     "85040": {
       "nom": "La Caillère-Saint-Hilaire",
       "note": "A",
@@ -526,21 +541,6 @@
           "note": "A",
           "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000422-2025.pdf",
           "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
-          "extraction": "case globale du PDF ARS"
-        }
-      ]
-    },
-    "85039": {
-      "nom": "La Bruffière",
-      "note": "C",
-      "multi": false,
-      "reseaux": [
-        {
-          "udi": "085000805",
-          "nom": "RESERVOIR DE LA BRUFFIERE",
-          "note": "C",
-          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000805-2025.pdf",
-          "conclusion": "L'eau distribuée est produite par l’usine de Basse",
           "extraction": "case globale du PDF ARS"
         }
       ]
@@ -810,6 +810,21 @@
         }
       ]
     },
+    "85065": {
+      "nom": "Chavagnes-en-Paillers",
+      "note": "C",
+      "multi": false,
+      "reseaux": [
+        {
+          "udi": "085000101",
+          "nom": "RESERVOIRS FRETIERE BEAULIEU",
+          "note": "C",
+          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000101-2025.pdf",
+          "conclusion": "L'eau distribuée a présenté des concentrations en bromate supérieures à la norme (soit 26",
+          "extraction": "case globale du PDF ARS"
+        }
+      ]
+    },
     "85066": {
       "nom": "Chavagnes-les-Redoux",
       "note": "A",
@@ -871,21 +886,6 @@
         }
       ]
     },
-    "85065": {
-      "nom": "Chavagnes-en-Paillers",
-      "note": "C",
-      "multi": false,
-      "reseaux": [
-        {
-          "udi": "085000101",
-          "nom": "RESERVOIRS FRETIERE BEAULIEU",
-          "note": "C",
-          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000101-2025.pdf",
-          "conclusion": "L'eau distribuée a présenté des concentrations en bromate supérieures à la norme (soit 26",
-          "extraction": "case globale du PDF ARS"
-        }
-      ]
-    },
     "85071": {
       "nom": "Commequiers",
       "note": "A",
@@ -931,21 +931,6 @@
         }
       ]
     },
-    "85076": {
-      "nom": "Cugand-la-Bernardière",
-      "note": "C",
-      "multi": false,
-      "reseaux": [
-        {
-          "udi": "085000805",
-          "nom": "RESERVOIR DE LA BRUFFIERE",
-          "note": "C",
-          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000805-2025.pdf",
-          "conclusion": "L'eau distribuée est produite par l’usine de Basse",
-          "extraction": "case globale du PDF ARS"
-        }
-      ]
-    },
     "85074": {
       "nom": "La Couture",
       "note": "A",
@@ -961,6 +946,21 @@
         }
       ]
     },
+    "85076": {
+      "nom": "Cugand-la-Bernardière",
+      "note": "C",
+      "multi": false,
+      "reseaux": [
+        {
+          "udi": "085000805",
+          "nom": "RESERVOIR DE LA BRUFFIERE",
+          "note": "C",
+          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000805-2025.pdf",
+          "conclusion": "L'eau distribuée est produite par l’usine de Basse",
+          "extraction": "case globale du PDF ARS"
+        }
+      ]
+    },
     "85077": {
       "nom": "Curzon",
       "note": "A",
@@ -971,21 +971,6 @@
           "nom": "RESERVOIR DE TREIZE VENTS",
           "note": "A",
           "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000186-2025.pdf",
-          "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
-          "extraction": "case globale du PDF ARS"
-        }
-      ]
-    },
-    "85078": {
-      "nom": "Damvix",
-      "note": "A",
-      "multi": false,
-      "reseaux": [
-        {
-          "udi": "085000135",
-          "nom": "RESERVOIR DE LA BALINGUE",
-          "note": "A",
-          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000135-2025.pdf",
           "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
           "extraction": "case globale du PDF ARS"
         }
@@ -1029,16 +1014,16 @@
         }
       ]
     },
-    "85083": {
-      "nom": "L'Épine",
+    "85078": {
+      "nom": "Damvix",
       "note": "A",
       "multi": false,
       "reseaux": [
         {
-          "udi": "085000019",
-          "nom": "ILE DE NOIRMOUTIER",
+          "udi": "085000135",
+          "nom": "RESERVOIR DE LA BALINGUE",
           "note": "A",
-          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000019-2025.pdf",
+          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000135-2025.pdf",
           "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
           "extraction": "case globale du PDF ARS"
         }
@@ -1062,6 +1047,21 @@
           "nom": "LES EPESSES",
           "note": "A",
           "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085003725-2025.pdf",
+          "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
+          "extraction": "case globale du PDF ARS"
+        }
+      ]
+    },
+    "85083": {
+      "nom": "L'Épine",
+      "note": "A",
+      "multi": false,
+      "reseaux": [
+        {
+          "udi": "085000019",
+          "nom": "ILE DE NOIRMOUTIER",
+          "note": "A",
+          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000019-2025.pdf",
           "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
           "extraction": "case globale du PDF ARS"
         }
@@ -1172,21 +1172,6 @@
         }
       ]
     },
-    "85093": {
-      "nom": "Fougeré",
-      "note": "A",
-      "multi": false,
-      "reseaux": [
-        {
-          "udi": "085000030",
-          "nom": "RESERVOIR DE LA CHOLETIERE",
-          "note": "A",
-          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000030-2025.pdf",
-          "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
-          "extraction": "case globale du PDF ARS"
-        }
-      ]
-    },
     "85094": {
       "nom": "Foussais-Payré",
       "note": "A",
@@ -1197,6 +1182,21 @@
           "nom": "RESERVOIR DE LA BALINGUE",
           "note": "A",
           "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000135-2025.pdf",
+          "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
+          "extraction": "case globale du PDF ARS"
+        }
+      ]
+    },
+    "85093": {
+      "nom": "Fougeré",
+      "note": "A",
+      "multi": false,
+      "reseaux": [
+        {
+          "udi": "085000030",
+          "nom": "RESERVOIR DE LA CHOLETIERE",
+          "note": "A",
+          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000030-2025.pdf",
           "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
           "extraction": "case globale du PDF ARS"
         }
@@ -1593,8 +1593,8 @@
         }
       ]
     },
-    "85121": {
-      "nom": "Le Langon",
+    "85123": {
+      "nom": "Liez",
       "note": "A",
       "multi": false,
       "reseaux": [
@@ -1608,8 +1608,8 @@
         }
       ]
     },
-    "85123": {
-      "nom": "Liez",
+    "85121": {
+      "nom": "Le Langon",
       "note": "A",
       "multi": false,
       "reseaux": [
@@ -1683,21 +1683,6 @@
         }
       ]
     },
-    "85129": {
-      "nom": "Les Lucs-sur-Boulogne",
-      "note": "A",
-      "multi": false,
-      "reseaux": [
-        {
-          "udi": "085001029",
-          "nom": "RESERVOIR DE BELLEVILLE",
-          "note": "A",
-          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085001029-2025.pdf",
-          "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
-          "extraction": "case globale du PDF ARS"
-        }
-      ]
-    },
     "85130": {
       "nom": "Maché",
       "note": "A",
@@ -1708,6 +1693,21 @@
           "nom": "RESERVOIR D'APREMONT",
           "note": "A",
           "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085001026-2025.pdf",
+          "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
+          "extraction": "case globale du PDF ARS"
+        }
+      ]
+    },
+    "85129": {
+      "nom": "Les Lucs-sur-Boulogne",
+      "note": "A",
+      "multi": false,
+      "reseaux": [
+        {
+          "udi": "085001029",
+          "nom": "RESERVOIR DE BELLEVILLE",
+          "note": "A",
+          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085001029-2025.pdf",
           "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
           "extraction": "case globale du PDF ARS"
         }
@@ -1984,6 +1984,21 @@
         }
       ]
     },
+    "85148": {
+      "nom": "Montreuil",
+      "note": "A",
+      "multi": false,
+      "reseaux": [
+        {
+          "udi": "085000135",
+          "nom": "RESERVOIR DE LA BALINGUE",
+          "note": "A",
+          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000135-2025.pdf",
+          "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
+          "extraction": "case globale du PDF ARS"
+        }
+      ]
+    },
     "85149": {
       "nom": "Moreilles",
       "note": "A",
@@ -1994,6 +2009,21 @@
           "nom": "NALLIERS",
           "note": "A",
           "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085001043-2025.pdf",
+          "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
+          "extraction": "case globale du PDF ARS"
+        }
+      ]
+    },
+    "85152": {
+      "nom": "Les Achards",
+      "note": "A",
+      "multi": false,
+      "reseaux": [
+        {
+          "udi": "085000176",
+          "nom": "RESERVOIR DU FOUR",
+          "note": "A",
+          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000176-2025.pdf",
           "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
           "extraction": "case globale du PDF ARS"
         }
@@ -2017,59 +2047,6 @@
           "nom": "SAINT LAURENT ET MORTAGNE",
           "note": "A",
           "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085001031-2025.pdf",
-          "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
-          "extraction": "case globale du PDF ARS"
-        }
-      ]
-    },
-    "85152": {
-      "nom": "Les Achards",
-      "note": "A",
-      "multi": false,
-      "reseaux": [
-        {
-          "udi": "085000176",
-          "nom": "RESERVOIR DU FOUR",
-          "note": "A",
-          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000176-2025.pdf",
-          "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
-          "extraction": "case globale du PDF ARS"
-        }
-      ]
-    },
-    "85148": {
-      "nom": "Montreuil",
-      "note": "A",
-      "multi": false,
-      "reseaux": [
-        {
-          "udi": "085000135",
-          "nom": "RESERVOIR DE LA BALINGUE",
-          "note": "A",
-          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000135-2025.pdf",
-          "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
-          "extraction": "case globale du PDF ARS"
-        }
-      ]
-    },
-    "85153": {
-      "nom": "Mouchamps",
-      "note": null,
-      "multi": true,
-      "reseaux": [
-        {
-          "udi": "085000101",
-          "nom": "RESERVOIRS FRETIERE BEAULIEU",
-          "note": "C",
-          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000101-2025.pdf",
-          "conclusion": "L'eau distribuée a présenté des concentrations en bromate supérieures à la norme (soit 26",
-          "extraction": "case globale du PDF ARS"
-        },
-        {
-          "udi": "085000108",
-          "nom": "RESERVOIR LA JONCHERE",
-          "note": "A",
-          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000108-2025.pdf",
           "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
           "extraction": "case globale du PDF ARS"
         }
@@ -2101,6 +2078,29 @@
           "nom": "TARDIERE",
           "note": "A",
           "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085003824-2025.pdf",
+          "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
+          "extraction": "case globale du PDF ARS"
+        }
+      ]
+    },
+    "85153": {
+      "nom": "Mouchamps",
+      "note": null,
+      "multi": true,
+      "reseaux": [
+        {
+          "udi": "085000101",
+          "nom": "RESERVOIRS FRETIERE BEAULIEU",
+          "note": "C",
+          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000101-2025.pdf",
+          "conclusion": "L'eau distribuée a présenté des concentrations en bromate supérieures à la norme (soit 26",
+          "extraction": "case globale du PDF ARS"
+        },
+        {
+          "udi": "085000108",
+          "nom": "RESERVOIR LA JONCHERE",
+          "note": "A",
+          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000108-2025.pdf",
           "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
           "extraction": "case globale du PDF ARS"
         }
@@ -2166,21 +2166,6 @@
         }
       ]
     },
-    "85159": {
-      "nom": "Nalliers",
-      "note": "A",
-      "multi": false,
-      "reseaux": [
-        {
-          "udi": "085001043",
-          "nom": "NALLIERS",
-          "note": "A",
-          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085001043-2025.pdf",
-          "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
-          "extraction": "case globale du PDF ARS"
-        }
-      ]
-    },
     "85160": {
       "nom": "Nesmy",
       "note": "A",
@@ -2191,6 +2176,21 @@
           "nom": "PLAINE ET GRAON CHOLETIERE",
           "note": "A",
           "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000181-2025.pdf",
+          "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
+          "extraction": "case globale du PDF ARS"
+        }
+      ]
+    },
+    "85159": {
+      "nom": "Nalliers",
+      "note": "A",
+      "multi": false,
+      "reseaux": [
+        {
+          "udi": "085001043",
+          "nom": "NALLIERS",
+          "note": "A",
+          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085001043-2025.pdf",
           "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
           "extraction": "case globale du PDF ARS"
         }
@@ -2211,21 +2211,6 @@
         }
       ]
     },
-    "85163": {
-      "nom": "Noirmoutier-en-l'Île",
-      "note": "A",
-      "multi": false,
-      "reseaux": [
-        {
-          "udi": "085000019",
-          "nom": "ILE DE NOIRMOUTIER",
-          "note": "A",
-          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000019-2025.pdf",
-          "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
-          "extraction": "case globale du PDF ARS"
-        }
-      ]
-    },
     "85162": {
       "nom": "Rives-d'Autise",
       "note": "A",
@@ -2236,6 +2221,21 @@
           "nom": "RESERVOIR DE LA BALINGUE",
           "note": "A",
           "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000135-2025.pdf",
+          "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
+          "extraction": "case globale du PDF ARS"
+        }
+      ]
+    },
+    "85163": {
+      "nom": "Noirmoutier-en-l'Île",
+      "note": "A",
+      "multi": false,
+      "reseaux": [
+        {
+          "udi": "085000019",
+          "nom": "ILE DE NOIRMOUTIER",
+          "note": "A",
+          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000019-2025.pdf",
           "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
           "extraction": "case globale du PDF ARS"
         }
@@ -2655,8 +2655,8 @@
         }
       ]
     },
-    "85197": {
-      "nom": "Montréverd",
+    "85196": {
+      "nom": "Saint-André-Goule-d'Oie",
       "note": "C",
       "multi": false,
       "reseaux": [
@@ -2670,8 +2670,8 @@
         }
       ]
     },
-    "85196": {
-      "nom": "Saint-André-Goule-d'Oie",
+    "85197": {
+      "nom": "Montréverd",
       "note": "C",
       "multi": false,
       "reseaux": [
@@ -2753,21 +2753,6 @@
         }
       ]
     },
-    "85204": {
-      "nom": "Saint-Christophe-du-Ligneron",
-      "note": "A",
-      "multi": false,
-      "reseaux": [
-        {
-          "udi": "085001026",
-          "nom": "RESERVOIR D'APREMONT",
-          "note": "A",
-          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085001026-2025.pdf",
-          "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
-          "extraction": "case globale du PDF ARS"
-        }
-      ]
-    },
     "85202": {
       "nom": "Sainte-Cécile",
       "note": "C",
@@ -2779,6 +2764,21 @@
           "note": "C",
           "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085002621-2025.pdf",
           "conclusion": "L'eau distribuée a présenté des concentrations en bromate supérieures à la norme (soit 26",
+          "extraction": "case globale du PDF ARS"
+        }
+      ]
+    },
+    "85204": {
+      "nom": "Saint-Christophe-du-Ligneron",
+      "note": "A",
+      "multi": false,
+      "reseaux": [
+        {
+          "udi": "085001026",
+          "nom": "RESERVOIR D'APREMONT",
+          "note": "A",
+          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085001026-2025.pdf",
+          "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
           "extraction": "case globale du PDF ARS"
         }
       ]
@@ -2843,21 +2843,6 @@
         }
       ]
     },
-    "85209": {
-      "nom": "Saint-Étienne-de-Brillouet",
-      "note": "A",
-      "multi": false,
-      "reseaux": [
-        {
-          "udi": "085000135",
-          "nom": "RESERVOIR DE LA BALINGUE",
-          "note": "A",
-          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000135-2025.pdf",
-          "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
-          "extraction": "case globale du PDF ARS"
-        }
-      ]
-    },
     "85210": {
       "nom": "Saint-Étienne-du-Bois",
       "note": "A",
@@ -2868,6 +2853,21 @@
           "nom": "RESERVOIR D'APREMONT",
           "note": "A",
           "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085001026-2025.pdf",
+          "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
+          "extraction": "case globale du PDF ARS"
+        }
+      ]
+    },
+    "85209": {
+      "nom": "Saint-Étienne-de-Brillouet",
+      "note": "A",
+      "multi": false,
+      "reseaux": [
+        {
+          "udi": "085000135",
+          "nom": "RESERVOIR DE LA BALINGUE",
+          "note": "A",
+          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000135-2025.pdf",
           "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
           "extraction": "case globale du PDF ARS"
         }
@@ -2893,6 +2893,29 @@
       "note": null,
       "multi": false,
       "reseaux": []
+    },
+    "85213": {
+      "nom": "Rives de l'Yon",
+      "note": "A",
+      "multi": false,
+      "reseaux": [
+        {
+          "udi": "085000030",
+          "nom": "RESERVOIR DE LA CHOLETIERE",
+          "note": "A",
+          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000030-2025.pdf",
+          "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
+          "extraction": "case globale du PDF ARS"
+        },
+        {
+          "udi": "085000181",
+          "nom": "PLAINE ET GRAON CHOLETIERE",
+          "note": "A",
+          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000181-2025.pdf",
+          "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
+          "extraction": "case globale du PDF ARS"
+        }
+      ]
     },
     "85214": {
       "nom": "Sainte-Foy",
@@ -2920,29 +2943,6 @@
           "note": "C",
           "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000101-2025.pdf",
           "conclusion": "L'eau distribuée a présenté des concentrations en bromate supérieures à la norme (soit 26",
-          "extraction": "case globale du PDF ARS"
-        }
-      ]
-    },
-    "85213": {
-      "nom": "Rives de l'Yon",
-      "note": "A",
-      "multi": false,
-      "reseaux": [
-        {
-          "udi": "085000030",
-          "nom": "RESERVOIR DE LA CHOLETIERE",
-          "note": "A",
-          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000030-2025.pdf",
-          "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
-          "extraction": "case globale du PDF ARS"
-        },
-        {
-          "udi": "085000181",
-          "nom": "PLAINE ET GRAON CHOLETIERE",
-          "note": "A",
-          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000181-2025.pdf",
-          "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
           "extraction": "case globale du PDF ARS"
         }
       ]
@@ -3045,21 +3045,6 @@
         }
       ]
     },
-    "85227": {
-      "nom": "Saint-Hilaire-des-Loges",
-      "note": "A",
-      "multi": false,
-      "reseaux": [
-        {
-          "udi": "085000135",
-          "nom": "RESERVOIR DE LA BALINGUE",
-          "note": "A",
-          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000135-2025.pdf",
-          "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
-          "extraction": "case globale du PDF ARS"
-        }
-      ]
-    },
     "85226": {
       "nom": "Saint-Hilaire-de-Riez",
       "note": "A",
@@ -3078,6 +3063,21 @@
           "nom": "SAINT HILAIRE DE RIEZ EST",
           "note": "A",
           "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085003840-2025.pdf",
+          "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
+          "extraction": "case globale du PDF ARS"
+        }
+      ]
+    },
+    "85227": {
+      "nom": "Saint-Hilaire-des-Loges",
+      "note": "A",
+      "multi": false,
+      "reseaux": [
+        {
+          "udi": "085000135",
+          "nom": "RESERVOIR DE LA BALINGUE",
+          "note": "A",
+          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000135-2025.pdf",
           "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
           "extraction": "case globale du PDF ARS"
         }
@@ -3108,6 +3108,21 @@
           "nom": "OLONNES ET TALMONDAIS EST",
           "note": "A",
           "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000063-2025.pdf",
+          "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
+          "extraction": "case globale du PDF ARS"
+        }
+      ]
+    },
+    "85232": {
+      "nom": "Saint-Hilaire-le-Vouhis",
+      "note": "A",
+      "multi": false,
+      "reseaux": [
+        {
+          "udi": "085000456",
+          "nom": "RESERVOIR DU FUITEAU",
+          "note": "A",
+          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000456-2025.pdf",
           "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
           "extraction": "case globale du PDF ARS"
         }
@@ -3167,16 +3182,16 @@
         }
       ]
     },
-    "85232": {
-      "nom": "Saint-Hilaire-le-Vouhis",
+    "85236": {
+      "nom": "Saint-Julien-des-Landes",
       "note": "A",
       "multi": false,
       "reseaux": [
         {
-          "udi": "085000456",
-          "nom": "RESERVOIR DU FUITEAU",
+          "udi": "085000056",
+          "nom": "RESERVOIR DE LA NATHALINIERE",
           "note": "A",
-          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000456-2025.pdf",
+          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000056-2025.pdf",
           "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
           "extraction": "case globale du PDF ARS"
         }
@@ -3192,21 +3207,6 @@
           "nom": "RESERVOIR DE LA ROUSSELIERE",
           "note": "A",
           "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000422-2025.pdf",
-          "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
-          "extraction": "case globale du PDF ARS"
-        }
-      ]
-    },
-    "85236": {
-      "nom": "Saint-Julien-des-Landes",
-      "note": "A",
-      "multi": false,
-      "reseaux": [
-        {
-          "udi": "085000056",
-          "nom": "RESERVOIR DE LA NATHALINIERE",
-          "note": "A",
-          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000056-2025.pdf",
           "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
           "extraction": "case globale du PDF ARS"
         }
@@ -3250,6 +3250,21 @@
         }
       ]
     },
+    "85240": {
+      "nom": "Saint-Malô-du-Bois",
+      "note": "C",
+      "multi": false,
+      "reseaux": [
+        {
+          "udi": "085000805",
+          "nom": "RESERVOIR DE LA BRUFFIERE",
+          "note": "C",
+          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000805-2025.pdf",
+          "conclusion": "L'eau distribuée est produite par l’usine de Basse",
+          "extraction": "case globale du PDF ARS"
+        }
+      ]
+    },
     "85242": {
       "nom": "Saint-Mars-la-Réorthe",
       "note": "A",
@@ -3260,6 +3275,36 @@
           "nom": "SAINT MARS LA REORTHE",
           "note": "A",
           "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000070-2025.pdf",
+          "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
+          "extraction": "case globale du PDF ARS"
+        }
+      ]
+    },
+    "85244": {
+      "nom": "Saint-Martin-de-Fraigneau",
+      "note": "A",
+      "multi": false,
+      "reseaux": [
+        {
+          "udi": "085000135",
+          "nom": "RESERVOIR DE LA BALINGUE",
+          "note": "A",
+          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000135-2025.pdf",
+          "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
+          "extraction": "case globale du PDF ARS"
+        }
+      ]
+    },
+    "85245": {
+      "nom": "Saint-Martin-des-Fontaines",
+      "note": "A",
+      "multi": false,
+      "reseaux": [
+        {
+          "udi": "085000432",
+          "nom": "RESERVOIR DU  BOIS DE L'EPAUD",
+          "note": "A",
+          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000432-2025.pdf",
           "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
           "extraction": "case globale du PDF ARS"
         }
@@ -3280,36 +3325,6 @@
         }
       ]
     },
-    "85240": {
-      "nom": "Saint-Malô-du-Bois",
-      "note": "C",
-      "multi": false,
-      "reseaux": [
-        {
-          "udi": "085000805",
-          "nom": "RESERVOIR DE LA BRUFFIERE",
-          "note": "C",
-          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000805-2025.pdf",
-          "conclusion": "L'eau distribuée est produite par l’usine de Basse",
-          "extraction": "case globale du PDF ARS"
-        }
-      ]
-    },
-    "85244": {
-      "nom": "Saint-Martin-de-Fraigneau",
-      "note": "A",
-      "multi": false,
-      "reseaux": [
-        {
-          "udi": "085000135",
-          "nom": "RESERVOIR DE LA BALINGUE",
-          "note": "A",
-          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000135-2025.pdf",
-          "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
-          "extraction": "case globale du PDF ARS"
-        }
-      ]
-    },
     "85246": {
       "nom": "Saint-Martin-des-Noyers",
       "note": "A",
@@ -3320,21 +3335,6 @@
           "nom": "SAINT MARTIN DES NOYERS",
           "note": "A",
           "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085002620-2025.pdf",
-          "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
-          "extraction": "case globale du PDF ARS"
-        }
-      ]
-    },
-    "85245": {
-      "nom": "Saint-Martin-des-Fontaines",
-      "note": "A",
-      "multi": false,
-      "reseaux": [
-        {
-          "udi": "085000432",
-          "nom": "RESERVOIR DU  BOIS DE L'EPAUD",
-          "note": "A",
-          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000432-2025.pdf",
           "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
           "extraction": "case globale du PDF ARS"
         }
@@ -3498,21 +3498,6 @@
         }
       ]
     },
-    "85261": {
-      "nom": "Sainte-Pexine",
-      "note": "A",
-      "multi": false,
-      "reseaux": [
-        {
-          "udi": "085000030",
-          "nom": "RESERVOIR DE LA CHOLETIERE",
-          "note": "A",
-          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000030-2025.pdf",
-          "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
-          "extraction": "case globale du PDF ARS"
-        }
-      ]
-    },
     "85262": {
       "nom": "Saint-Philbert-de-Bouaine",
       "note": "B",
@@ -3538,6 +3523,21 @@
           "nom": "HAUT BOCAGE",
           "note": "A",
           "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000090-2025.pdf",
+          "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
+          "extraction": "case globale du PDF ARS"
+        }
+      ]
+    },
+    "85261": {
+      "nom": "Sainte-Pexine",
+      "note": "A",
+      "multi": false,
+      "reseaux": [
+        {
+          "udi": "085000030",
+          "nom": "RESERVOIR DE LA CHOLETIERE",
+          "note": "A",
+          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000030-2025.pdf",
           "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
           "extraction": "case globale du PDF ARS"
         }
@@ -4018,21 +4018,6 @@
         }
       ]
     },
-    "85301": {
-      "nom": "Vendrennes",
-      "note": "C",
-      "multi": false,
-      "reseaux": [
-        {
-          "udi": "085000101",
-          "nom": "RESERVOIRS FRETIERE BEAULIEU",
-          "note": "C",
-          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000101-2025.pdf",
-          "conclusion": "L'eau distribuée a présenté des concentrations en bromate supérieures à la norme (soit 26",
-          "extraction": "case globale du PDF ARS"
-        }
-      ]
-    },
     "85302": {
       "nom": "Chanverrie",
       "note": "C",
@@ -4044,6 +4029,21 @@
           "note": "C",
           "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000805-2025.pdf",
           "conclusion": "L'eau distribuée est produite par l’usine de Basse",
+          "extraction": "case globale du PDF ARS"
+        }
+      ]
+    },
+    "85301": {
+      "nom": "Vendrennes",
+      "note": "C",
+      "multi": false,
+      "reseaux": [
+        {
+          "udi": "085000101",
+          "nom": "RESERVOIRS FRETIERE BEAULIEU",
+          "note": "C",
+          "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000101-2025.pdf",
+          "conclusion": "L'eau distribuée a présenté des concentrations en bromate supérieures à la norme (soit 26",
           "extraction": "case globale du PDF ARS"
         }
       ]
@@ -4110,18 +4110,6 @@
     }
   },
   "reseaux": {
-    "085000024": {
-      "note": "A",
-      "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000024-2025.pdf",
-      "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
-      "extraction": "case globale du PDF ARS"
-    },
-    "085000019": {
-      "note": "A",
-      "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000019-2025.pdf",
-      "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
-      "extraction": "case globale du PDF ARS"
-    },
     "085000030": {
       "note": "A",
       "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000030-2025.pdf",
@@ -4134,9 +4122,27 @@
       "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
       "extraction": "case globale du PDF ARS"
     },
+    "085000019": {
+      "note": "A",
+      "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000019-2025.pdf",
+      "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
+      "extraction": "case globale du PDF ARS"
+    },
+    "085000024": {
+      "note": "A",
+      "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000024-2025.pdf",
+      "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
+      "extraction": "case globale du PDF ARS"
+    },
     "085000042": {
       "note": "A",
       "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000042-2025.pdf",
+      "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
+      "extraction": "case globale du PDF ARS"
+    },
+    "085000045": {
+      "note": "A",
+      "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000045-2025.pdf",
       "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
       "extraction": "case globale du PDF ARS"
     },
@@ -4149,12 +4155,6 @@
     "085000062": {
       "note": "A",
       "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000062-2025.pdf",
-      "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
-      "extraction": "case globale du PDF ARS"
-    },
-    "085000045": {
-      "note": "A",
-      "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000045-2025.pdf",
       "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
       "extraction": "case globale du PDF ARS"
     },
@@ -4212,6 +4212,12 @@
       "conclusion": "L'eau distribuée a présenté des concentrations en bromate supérieures à la norme (soit 26",
       "extraction": "case globale du PDF ARS"
     },
+    "085000108": {
+      "note": "A",
+      "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000108-2025.pdf",
+      "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
+      "extraction": "case globale du PDF ARS"
+    },
     "085000111": {
       "note": "B",
       "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000111-2025.pdf",
@@ -4221,12 +4227,6 @@
     "085000135": {
       "note": "A",
       "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000135-2025.pdf",
-      "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
-      "extraction": "case globale du PDF ARS"
-    },
-    "085000108": {
-      "note": "A",
-      "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085000108-2025.pdf",
       "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
       "extraction": "case globale du PDF ARS"
     },
@@ -4356,15 +4356,15 @@
       "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
       "extraction": "case globale du PDF ARS"
     },
-    "085001031": {
-      "note": "A",
-      "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085001031-2025.pdf",
-      "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
-      "extraction": "case globale du PDF ARS"
-    },
     "085001032": {
       "note": "A",
       "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085001032-2025.pdf",
+      "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
+      "extraction": "case globale du PDF ARS"
+    },
+    "085001031": {
+      "note": "A",
+      "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085001031-2025.pdf",
       "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
       "extraction": "case globale du PDF ARS"
     },
@@ -4392,27 +4392,27 @@
       "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
       "extraction": "case globale du PDF ARS"
     },
-    "085002621": {
-      "note": "C",
-      "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085002621-2025.pdf",
-      "conclusion": "L'eau distribuée a présenté des concentrations en bromate supérieures à la norme (soit 26",
-      "extraction": "case globale du PDF ARS"
-    },
     "085002624": {
       "note": "A",
       "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085002624-2025.pdf",
       "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
       "extraction": "case globale du PDF ARS"
     },
-    "085002631": {
-      "note": "A",
-      "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085002631-2025.pdf",
-      "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
+    "085002621": {
+      "note": "C",
+      "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085002621-2025.pdf",
+      "conclusion": "L'eau distribuée a présenté des concentrations en bromate supérieures à la norme (soit 26",
       "extraction": "case globale du PDF ARS"
     },
     "085002632": {
       "note": "A",
       "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085002632-2025.pdf",
+      "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
+      "extraction": "case globale du PDF ARS"
+    },
+    "085002631": {
+      "note": "A",
+      "source": "https://carto.atlasante.fr/IHM/cartes/infofactures/AQUASISED/2025/INFOFACTURE-085002631-2025.pdf",
       "conclusion": "L'eau distribuée est de bonne qualité. Elle peut être consommée par tous.",
       "extraction": "case globale du PDF ARS"
     },
